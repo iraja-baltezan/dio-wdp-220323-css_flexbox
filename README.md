@@ -9,3 +9,8 @@ https://gitlab.com/karensantos/project-flexbox-dio
 fornecidos pela instrutora Karen Santos na DIO.
 
 Cópias dos arquivos originais estão na pasta `res`.
+
+## Referências
+
+- Arquivos originais do exercício: https://gitlab.com/karensantos/project-flexbox-dio
+- Foram aplicados alguns princípios de RSCSS (https://rscss.io).

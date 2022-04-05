@@ -4,110 +4,138 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flex Turismos</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400&family=Quicksand:wght@400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/normalize-min.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
-    <header>
-        <h1>FlexTurismos</h1>
-        <ul>
-            <li><a href="#quem-somos">Quem Somos</a></li>
-            <li><a href="#servicos">Serviços</a></li>
-            <li><a href="#planos">Planos</a></li>
-        </ul>
+<body class="page-body">
+    <header class="page-header" id="page-top">
+        <div class="page-container">
+            <h1 class="brand">FlexTurismos</h1>
+            <a class="menutoggle _disable-select"></a>
+            <div class="page-menu">
+                <ul class="options _list-u">
+                    <li class="option"><a class="link" href="#quem-somos">Quem Somos</a></li>
+                    <li class="option"><a class="link" href="#servicos">Serviços</a></li>
+                    <li class="option"><a class="link" href="#planos">Planos</a></li>
+                </ul>
+            </div>
+        </div>
     </header>
 
-    <div>
-        <div>
-            <h1>Flex <br>Turismos</h1>
-            <p>O melhor serviço para você!</p>
-            <a href="">Saiba Mais!</a>
-        </div>
-
-        <div>
-            <div><img src="./images/0-main.png" alt="banner de apresentação"></div>
-        </div>
-    </div>
-
-    <div>
-        <div>
-            <img src="./images/1-quem-somos.png" alt="balcão de atendimento">
-        </div>
-
-        <div>
-            <h2>Quem somos</h2>
-            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
-            <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
-        </div>
-    </div>
-
-    <div>
-        <div>
-            <h2>Serviços</h2>
-        </div>
-
-        <div>
-            <div>
-                <div><img src="./images/icon-2.png" alt="hospedagens"></div>
-                <p>Hospedagens</p>
-                <a href="#">Comprar Agora</a>
+    <section class="page-section -presentation">
+        <div class="page-container">
+            <div class="col">
+                <h1 class="_m-0">Flex <br>Turismos</h1>
+                <p class="_m-0">O melhor serviço para você!</p>
+                <a class="link-button" href="">Saiba Mais!</a>
             </div>
 
-            <div>
-               <div><img src="./images/icon-1.png" alt="pacote de viagens"></div>
-               <p>Pacotes de viagens</p>
-               <a href="#">Comprar Agora</a>
+            <div class="col">
+                <div><img class="_img-responsive" src="./img/0-main.png" alt="banner de apresentação"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="quem-somos" class="page-section -about-us">
+        <div class="page-container">
+            <div class="figure">
+                <img class="_img-responsive" src="./img/1-quem-somos.png" alt="balcão de atendimento">
             </div>
 
-            <div>
-                <div><img src="./images/icon-3.png" alt="roteiros personalizados"></div>
-                <p>Roteiros personalizados</p>
-                <a href="#">Comprar Agora</a>
+            <div class="text">
+                <h2 class="section-title -frills">Quem somos</h2>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
+                <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos" class="page-section -cols -services -color-inverse">
+        <div class="page-container">
+            <h2 class="section-title">Serviços</h2>
+            <div class="service-types">
+                <div class="service">
+                    <img class="img" src="./img/icon-2.png" alt="hospedagens">
+                    <p>Hospedagens</p>
+                    <a class="link-button" href="#">Comprar Agora</a>
+                </div>
+                <div class="service">
+                    <img class="img" src="./img/icon-1.png" alt="pacote de viagens">
+                    <p>Pacotes de viagens</p>
+                    <a class="link-button" href="#">Comprar Agora</a>
+                </div>
+                <div class="service">
+                    <img class="img" src="./img/icon-3.png" alt="roteiros personalizados">
+                    <p>Roteiros personalizados</p>
+                    <a class="link-button" href="#">Comprar Agora</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="planos" class="page-section -plans">
+        <div class="page-container">
+            <div class="service-plan">
+                <h3 class="section-title">Plano 1</h3>
+                <ul class="features">
+                    <li class="feature">Suporte 24h</li>
+                    <li class="feature">Serviços de quarto</li>
+                    <li class="feature">Guia turístico</li>
+                </ul>
+                <a class="link-button" href="#">Saiba Mais!</a>
             </div>
 
+            <div class="service-plan">
+                <h3 class="section-title">Plano 2</h3>
+                <ul class="features">
+                    <li class="feature">Suporte 24h</li>
+                    <li class="feature">Serviços de quarto</li>
+                    <li class="feature">Guia turístico</li>
+                    <li class="feature">Roteiro de trilhas</li>
+                    <li class="feature">Serviço personalizado</li>
+                </ul>
+                <a class="link-button" href="#">Saiba Mais!</a>
+            </div>
+
+            <div class="service-plan">
+                <h3 class="section-title">Plano 3</h3>
+                <ul class="features">
+                    <li class="feature">Suporte 24h</li>
+                    <li class="feature">Serviços de quarto</li>
+                    <li class="feature">Guia turístico</li>
+                    <li class="feature">Roteiro de trilhas</li>
+                    <li class="feature">Serviço personalizado</li>
+                    <li class="feature">Área Vip com boca-livre e lencinhos umedecidos</li>
+                </ul>
+                <a class="link-button" href="#">Saiba Mais!</a>
+            </div>
         </div>
-    </div>
+    </section>
 
-    <div>
-
-        <div>
-            <h3>Plano 2</h3>
-            <ul>
-                <li>Suporte 24h</li>
-                <li>Serviços de quarto</li>
-                <li>Guia turístico</li>
-            </ul>
-            <a href="#">Saiba Mais!</a>
+    <footer class="page-footer">
+        <div class="page-container">
+            <p class="copyright">Flex Turismos &copy; Ad &AElig;ternum</p>
+            <p class="developer">Desenvolvido por: <span class="_no-wrap">Uébidezaine Lindu e Totoso S.A.</span></p>
         </div>
-
-        <div>
-            <h3>Plano 2</h3>
-            <ul>
-                <li>Suporte 24h</li>
-                <li>Serviços de quarto</li>
-                <li>Guia turístico</li>
-                <li>Roteiro de trilhas</li>
-                <li>Serviço personalizado</li>
-            </ul>
-            <a href="#">Saiba Mais!</a>
-        </div>
-
-        <div>
-            <h3>Plano 3</h3>
-            <ul>
-                <li>Suporte 24h</li>
-                <li>Serviços de quarto</li>
-                <li>Guia turístico</li>
-                <li>Roteiro de trilhas</li>
-                <li>Serviço personalizado</li>
-                <li>Área Vip</li>
-            </ul>
-            <a href="#">Saiba Mais!</a>
-        </div>
-    </div>
-
-    <footer>
-        <p>&copy; 2021 CSS Flexbox</p>
-        <p>Desenvolvido por: Seu nome aqui dev</p>
     </footer>
+
+    <script>
+        (function(document){
+            document
+                .querySelectorAll('.page-header .menutoggle, .page-header .page-menu')
+                .forEach(element => element.addEventListener('click', pageHeaderMenuToggle));
+
+            function pageHeaderMenuToggle(event){
+                document.documentElement.classList.toggle('_no-scroll')
+                document.body.classList.toggle('_no-scroll')
+                document.querySelector('.page-header').classList.toggle('-menu-is-open')
+            }
+        })(document);
+    </script>
+
 </body>
 </html>
