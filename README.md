@@ -19,4 +19,5 @@ https://iraja-baltezan.github.io/dio-wdp-220323-css_flexbox/
 ## Referências
 
 - Arquivos originais do exercício: https://gitlab.com/karensantos/project-flexbox-dio
-- Foram aplicados alguns princípios de RSCSS (https://rscss.io).
+- Foram aplicados alguns princípios de RSCSS (https://rscss.io), porém sem seguir fielmente as recomendações.
+- DIO https://web.dio.me/course/posicionando-elementos-com-flexbox-em-css/learning/46f1e8c7-ef6e-458e-ad4e-369fc65faba7
