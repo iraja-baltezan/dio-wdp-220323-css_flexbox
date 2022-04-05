@@ -419,3 +419,53 @@ p {
         align-items: center;
     }
 }
+
+/* Botão "ir para o topo da página" */
+.to-the-top {
+    /* background-color: rgba(191, 128, 64, 0.5); */
+    position: absolute;
+    box-sizing: border-box;
+    top: 12rem;
+    right: 2rem;
+    bottom: 0;
+    pointer-events: none;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+}
+@supports (-moz-appearance: meterbar) {
+    .to-the-top {
+        clip: rect(0, 3rem, auto, 0);
+    }
+}
+.button-to-the-top {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events: all;
+    background-color: var(--color-brand-b);
+    color: var(--color-tx-on-brand-b);
+    font-size: 0;
+    text-decoration: none;
+    border-radius: 50%;
+    box-shadow: 0 0.25rem 1rem #777;
+    position: sticky;
+    transform: translateY(100vh);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    top: -5rem;
+    height: 2.5rem;
+    width: 2.5rem;
+    margin-bottom: -5rem;
+}
+.button-to-the-top::before {
+    content: '\1F839';
+    display: block;
+    font-size: 3rem;
+    padding-bottom: 0.2rem;
+    opacity: 0.7;
+}
+/* Botão "ir para o topo da página" end*/
