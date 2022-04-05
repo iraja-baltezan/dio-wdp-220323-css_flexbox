@@ -134,6 +134,11 @@
                 .forEach(element => element.addEventListener('click', pageHeaderMenuToggle));
 
             function pageHeaderMenuToggle(event){
+                if (
+                    window
+                        .matchMedia('(min-width: 768px)')
+                        .matches
+                ) return;
                 document.documentElement.classList.toggle('_no-scroll')
                 document.body.classList.toggle('_no-scroll')
                 document.querySelector('.page-header').classList.toggle('-menu-is-open')
