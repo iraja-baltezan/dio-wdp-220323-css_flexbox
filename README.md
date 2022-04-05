@@ -10,6 +10,12 @@ fornecidos pela instrutora Karen Santos na DIO.
 
 Cópias dos arquivos originais estão na pasta `res`.
 
+## Preview
+
+O resultado deste código pode ser visto no seguinte endereço:
+
+https://iraja-baltezan.github.io/dio-wdp-220323-css_flexbox/
+
 ## Referências
 
 - Arquivos originais do exercício: https://gitlab.com/karensantos/project-flexbox-dio
